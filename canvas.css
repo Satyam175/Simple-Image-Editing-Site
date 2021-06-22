@@ -1,0 +1,65 @@
+canvas {
+  height: 400px;
+  width: 450px;
+  border: 1px solid green;
+  padding-left: 20px;
+}
+.canv {
+  border-radius: 70px;
+  background-color: #fff;
+}
+
+#dd5 {
+  margin-left: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font: font-weight 300;
+  text-decoration: none;
+
+  border-radius: 200px;
+  color: white;
+
+  border: 0px;
+  margin-left: 20px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf6d17;
+}
+
+body {
+  background-color: rgba(203, 255, 255, 0.5);
+}
+
+.rp {
+  margin-top: 50px;
+}
+.rps {
+  margin-top: 40px;
+}
+h1 {
+  margin-top: 20px;
+  font-size: 200%;
+}
+
+.upload {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.last {
+  display: inline-block;
+}
+body {
+  margin-top: 100px;
+  border: 20px solid rgb(43, 214, 226);
+  border-top: 0px;
+  padding-bottom: 20px;
+}
+#sldr {
+  width: 100px;
+  margin: 20px;
+}

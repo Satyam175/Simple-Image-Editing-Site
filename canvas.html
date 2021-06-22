@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is a test button code</title>
+    <link rel="stylesheet" type="text/css" href="canvas.css" />
+    <script src="canvas.js" type="text/javascript"></script>
+    <script src="SampleImage.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <section>
+        <h1>Using a Canvas</h1>
+        <canvas class="canv" id="d1"></canvas>
+        <p class="rp">
+          <input
+            class="btn btn-primary"
+            type="button"
+            value="Make Lime"
+            onclick="makelime()"
+          />
+          <input id="clr" type="color" value="Make Red" onclick="docolor()" />
+          <input
+            class="btn btn-warning"
+            type="button"
+            value="Make Yellow"
+            onclick="makeyellow()"
+          />
+          <input
+            class="btn btn-danger"
+            type="button"
+            value="Clear"
+            onclick="cleasr()"
+          />
+          <input
+            id="sldr"
+            type="range"
+            value="0"
+            min="0"
+            max="100"
+            oninput="makecolor()"
+          />
+        </p>
+      </section>
+    </div>
+    <section class="upload">
+      <div class="container">
+        <h1>Upload A Image</h1>
+        <div class="canb">
+          <canvas class="canv" id="dd2"></canvas>
+          <canvas class="canv" id="dd5"></canvas>
+        </div>
+        <div class="rps">
+          <input
+            class="btn btn-primary"
+            type="file"
+            id="dd4"
+            multiple="false"
+            accept="image/*"
+            onchange="upload()"
+          />
+          <br />
+          <input
+            class="btn btn-success"
+            type="button"
+            value="makegrey"
+            onclick="makegrey()"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="upload">
+      <div class="container">
+        <h1>Change Background Image</h1>
+
+        <div class="canb">
+          <canvas class="canv" id="dd6"></canvas>
+          <canvas class="canv" id="dd8"></canvas>
+        </div>
+
+        <div class="last">
+          <h2>foreground Image :</h2>
+          <input
+            class="btn btn-primary"
+            type="file"
+            id="dd7"
+            multiple="false"
+            accept="image/*"
+            onchange="uploadfg()"
+          />
+          <h2>background Image:</h2>
+          <input
+            class="btn btn-primary"
+            type="file"
+            id="dd9"
+            multiple="false"
+            accept="image/*"
+            onchange="uploadbg()"
+          />
+          <br />
+          <input
+            class="btn btn-success"
+            type="button"
+            value="proceed"
+            onclick="doGreenScreen()"
+          />
+          <input
+            class="btn btn-danger"
+            type="button"
+            value="clear"
+            onclick="clearfg()"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
